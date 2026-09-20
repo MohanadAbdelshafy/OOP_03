@@ -1,5 +1,75 @@
 ﻿namespace OOP_03
 {
+    #region Part2 1.Shipment Class Update
+
+    //public struct DeliveryAddress
+    //{
+    //    public string City;
+    //    public string Street;
+    //    public int BuildingNumber;
+
+    //    public DeliveryAddress(string city, string street, int buildingNumber)
+    //    {
+    //        City = city;
+    //        Street = street;
+    //        BuildingNumber = buildingNumber;
+    //    }
+
+    //    public string GetFullAddress()
+    //    {
+    //        return $"BuildingNumber: {BuildingNumber} Street: {Street} City: {City}";
+    //    }
+    //}
+    //public class Driver
+    //{
+    //    public string Name { get; set; }
+    //    public Driver(string name) { Name = name; }
+    //}
+    //public class Shipment
+    //{
+    //    public string TrackingCode { get; private set; }
+    //    public string Description { get; set; }
+    //    public double Weight { get; protected set; }
+    //    public decimal DeliveryFee { get; protected set; }
+    //    public DeliveryAddress Destination { get; set; }
+
+    //    public virtual decimal EstimatedCost
+    //    {
+    //        get { return DeliveryFee + (decimal)(Weight * 5); }
+    //    }
+
+    //    public Shipment() { }
+
+    //    public Shipment(string trackingCode, string description, double weight, decimal deliveryFee, DeliveryAddress destination)
+    //    {
+    //        TrackingCode = trackingCode;
+    //        Description = description;
+    //        Weight = weight > 0 ? weight : 1;
+    //        DeliveryFee = deliveryFee >= 0 ? deliveryFee : 0;
+    //        Destination = destination;
+    //    }
+
+    //    public void UpdateWeight(double newWeight)
+    //    {
+    //        if (newWeight > 0)
+    //            Weight = newWeight;
+    //    }
+    //    public void UpdateWeight(double newWeight, double packingWeight)
+    //    {
+    //        if (newWeight > 0 && packingWeight > 0)
+    //            Weight = newWeight + packingWeight;
+    //    }
+
+    //    public virtual void PrintShipment()
+    //    {
+    //        Console.WriteLine($"Tracking Code : {TrackingCode}");
+    //        Console.WriteLine($"Description   : {Description}");
+    //        Console.WriteLine($"Weight        : {Weight} KG");
+    //        Console.WriteLine($"Delivery Fee  : {DeliveryFee} EGP");
+    //    }
+    //}
+
+    #endregion
     internal class Program
     {
         static void Main(string[] args)
@@ -29,6 +99,7 @@
             ////c)No. A sealed method cannot be overridden.The fundamental reason for applying the sealed keyword to a method 
             ////is to explicitly stop the inheritance chain for that specific behavior
             #endregion
+
         }
     }
 }
