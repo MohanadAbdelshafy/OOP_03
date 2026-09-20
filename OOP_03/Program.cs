@@ -246,6 +246,19 @@
     //    }
     //}
     #endregion
+    #region Part2 8. Sealed Method
+    //public class PriorityInternationalShipment : InternationalShipment
+    //{
+    //    public PriorityInternationalShipment(string trackingCode, string description, double weight, decimal deliveryFee, DeliveryAddress destination, string destinationCountry, decimal customsFee)
+    //        : base(trackingCode, description, weight, deliveryFee, destination, destinationCountry, customsFee)
+    //    {
+    //    }
+    //    public sealed override void GenerateCustomsReport()
+    //    {
+    //        Console.WriteLine("Generating PRIORITY Customs Report...");
+    //    }
+    //}
+    #endregion
     internal class Program
     {
         static void Main(string[] args)
