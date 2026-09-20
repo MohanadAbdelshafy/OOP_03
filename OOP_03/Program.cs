@@ -18,6 +18,17 @@
             ////Dynamic Binding (Late Binding):The method call is resolved at run-time based on the actual object type created in memory,
             //// not the reference type. This happens with method overriding (when virtual/override keywords are used).
             #endregion
+            #region Part1 question2
+            ////a)The sealed keyword prevents a class from being inherited. When a class is marked as sealed, no other class can derive from it
+            ////It is used to protect the code from being altered via inheritance and can occasionally provide minor performance optimizations.
+
+            ////b)Sealed Class: Prevents the entire class from being inherited. You cannot create a child class from it.
+
+            ////Sealed Method: Prevents a specific overridden method from being overridden further by classes lower in the inheritance hierarchy.
+
+            ////c)No. A sealed method cannot be overridden.The fundamental reason for applying the sealed keyword to a method 
+            ////is to explicitly stop the inheritance chain for that specific behavior
+            #endregion
         }
     }
 }
