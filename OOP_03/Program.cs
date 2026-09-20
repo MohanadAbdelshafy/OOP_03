@@ -259,6 +259,7 @@
     //    }
     //}
     #endregion
+
     internal class Program
     {
         static void Main(string[] args)
@@ -287,6 +288,56 @@
 
             ////c)No. A sealed method cannot be overridden.The fundamental reason for applying the sealed keyword to a method 
             ////is to explicitly stop the inheritance chain for that specific behavior
+            #endregion
+            #region Part2 9.Main
+            //Driver driver = new Driver("Ahmed Mohamed");
+
+            //DeliveryCenter center = new DeliveryCenter();
+
+            //center.CenterDriver = driver;
+
+            //DeliveryAddress address = new DeliveryAddress("Cairo", "Tahrir", 15);
+
+            //StandardShipment s1 = new StandardShipment("SH001", "Laptop", 3, 80, address);
+
+            //ExpressShipment s2 = new ExpressShipment("SH002", "Mobile Phone", 2, 60, address, 30);
+
+            //InternationalShipment s3 = new InternationalShipment("SH003", "Television", 8, 120, address, "Germany", 100);
+
+            //center.AddShipment(s1);
+            //center.AddShipment(s2);
+            //center.AddShipment(s3);
+            //center.PrintAllShipments();
+            //Console.WriteLine("Printing Using DeliveryHelper...\n");
+            //DeliveryHelper.PrintShipmentDetails(s1);
+            //DeliveryHelper.PrintShipmentDetails(s2);
+            //DeliveryHelper.PrintShipmentDetails(s3);
+            //Console.WriteLine("==========================================\n");
+
+            //Console.WriteLine("Updating Weight...\n");
+            //Console.WriteLine($"Original Weight : {s1.Weight} KG\n");
+
+            //s1.UpdateWeight(5);
+            //Console.WriteLine($"Updated Weight : {s1.Weight} KG\n");
+
+            //s1.UpdateWeight(5, 0.5);
+            //Console.WriteLine($"Updated Weight After Packing : {s1.Weight} KG\n");
+
+            //Console.WriteLine("==========================================\n");
+
+            //Console.WriteLine("Printing Using Shipment[]...\n");
+            //Shipment[] mixedArray = new Shipment[] { s1, s2, s3 };
+            //foreach (Shipment s in mixedArray)
+            //{
+            //    if (s is StandardShipment) Console.WriteLine("Standard Shipment...\n");
+            //    else if (s is ExpressShipment) Console.WriteLine("Express Shipment...\n");
+            //    else if (s is InternationalShipment) Console.WriteLine("International Shipment...\n");
+            //}
+            //Console.WriteLine("==========================================\n");
+
+            //PriorityInternationalShipment pShipment = new PriorityInternationalShipment("SH004", "Docs", 1, 200, address, "UK", 50);
+ 
+            //Console.ReadLine();
             #endregion
 
         }
