@@ -70,6 +70,75 @@
     //}
 
     #endregion
+    #region Part2  2,3,4.Constructor Chaining&Overrides
+    //public class StandardShipment : Shipment
+    //{
+    //    // 2. Constructor Chaining -> base(...)
+    //    public StandardShipment(string trackingCode, string description, double weight, decimal deliveryFee, DeliveryAddress destination)
+    //        : base(trackingCode, description, weight, deliveryFee, destination)
+    //    {
+    //    }
+    //    public override void PrintShipment()
+    //    {
+    //        Console.WriteLine("Standard Shipment\n");
+    //        base.PrintShipment();
+    //        Console.WriteLine($"Estimated Cost: {EstimatedCost} EGP");
+    //        Console.WriteLine("------------------------------------------");
+    //    }
+    //}
+
+    //public class ExpressShipment : Shipment
+    //{
+    //    public decimal ExtraFee { get; set; }
+
+    //    public ExpressShipment(string trackingCode, string description, double weight, decimal deliveryFee, DeliveryAddress destination, decimal extraFee)
+    //        : base(trackingCode, description, weight, deliveryFee, destination)
+    //    {
+    //        ExtraFee = extraFee >= 0 ? extraFee : 0;
+    //    }
+
+    //    public override decimal EstimatedCost
+    //    {
+    //        get { return base.EstimatedCost + ExtraFee; }
+    //    }
+    //    public override void PrintShipment()
+    //    {
+    //        Console.WriteLine("Express Shipment\n");
+    //        base.PrintShipment();
+    //        Console.WriteLine($"Extra Fee     : {ExtraFee} EGP");
+    //        Console.WriteLine($"Estimated Cost: {EstimatedCost} EGP");
+    //        Console.WriteLine("\n------------------------------------------\n");
+    //    }
+    //}
+    //public class InternationalShipment : Shipment
+    //{
+    //    public string DestinationCountry { get; set; }
+    //    public decimal CustomsFee { get; set; }
+    //    public InternationalShipment(string trackingCode, string description, double weight, decimal deliveryFee, DeliveryAddress destination, string destinationCountry, decimal customsFee)
+    //        : base(trackingCode, description, weight, deliveryFee, destination)
+    //    {
+    //        DestinationCountry = string.IsNullOrWhiteSpace(destinationCountry) ? "Unknown" : destinationCountry;
+    //        CustomsFee = customsFee >= 0 ? customsFee : 0;
+    //    }
+    //    public override decimal EstimatedCost
+    //    {
+    //        get { return base.EstimatedCost + CustomsFee; }
+    //    }
+    //    public override void PrintShipment()
+    //    {
+    //        Console.WriteLine("International Shipment\n");
+    //        base.PrintShipment();
+    //        Console.WriteLine($"Destination Country   : {DestinationCountry}");
+    //        Console.WriteLine($"Customs Fee           : {CustomsFee} EGP");
+    //        Console.WriteLine($"Estimated Cost        : {EstimatedCost} EGP");
+    //        Console.WriteLine("\n==========================================\n");
+    //    }
+    //    public virtual void GenerateCustomsReport()
+    //    {
+    //        Console.WriteLine("Generating Standard Customs Report...");
+    //    }
+    //}
+    #endregion
     internal class Program
     {
         static void Main(string[] args)
