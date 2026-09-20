@@ -237,6 +237,15 @@
     //    }
     //}
     #endregion
+    #region Part2 7. Sealed Class
+    //public sealed class CompletedShipment : Shipment
+    //{
+    //    public CompletedShipment(string trackingCode, string description, double weight, decimal deliveryFee, DeliveryAddress destination)
+    //        : base(trackingCode, description, weight, deliveryFee, destination)
+    //    {
+    //    }
+    //}
+    #endregion
     internal class Program
     {
         static void Main(string[] args)
