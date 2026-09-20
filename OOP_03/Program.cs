@@ -139,6 +139,92 @@
     //    }
     //}
     #endregion
+    #region Part2 5.Update DeliveryCenter
+    //public class DeliveryCenter
+    //{
+    //    public Driver CenterDriver { get; set; }
+    //    private Shipment[] Shipments = new Shipment[20];
+    //    public Shipment this[int index]
+    //    {
+    //        get
+    //        {
+    //            if (index >= 0 && index < shipments.Length)
+    //            {
+    //                return shipments[index];
+    //            }
+    //            return null;
+    //        }
+    //        set
+    //        {
+    //            if (index >= 0 && index < shipments.Length)
+    //            {
+    //                shipments[index] = value;
+    //            }
+    //        }
+    //    }
+
+    //    public Shipment this[string trackingCode]
+    //    {
+    //        get
+    //        {
+    //            for (int i = 0; i < shipments.Length; i++)
+    //            {
+    //                if (shipments[i] != null && shipments[i].TrackingCode == trackingCode)
+    //                {
+    //                    return shipments[i];
+    //                }
+    //            }
+    //            return null;
+    //        }
+    //    }
+    //    public bool RemoveShipment(string trackingCode)
+    //    {
+    //        for (int i = 0; i < shipments.Length; i++)
+    //        {
+    //            if (shipments[i] != null && shipments[i].TrackingCode == trackingCode)
+    //            {
+    //                for (int j = i; j < shipments.Length - 1; j++)
+    //                {
+    //                    shipments[j] = shipments[j + 1];
+    //                }
+    //                shipments[shipments.Length - 1] = null;
+    //                return true;
+    //            }
+    //        }
+    //        return false;
+    //    }
+    //    public bool AddShipment(Shipment shipment)
+    //    {
+    //        for (int i = 0; i < Shipments.Length; i++)
+    //        {
+    //            if (Shipments[i] == null)
+    //            {
+    //                Shipments[i] = shipment;
+    //                return true;
+    //            }
+    //        }
+    //        return false;
+    //    }
+
+    //    public void PrintAllShipments()
+    //    {
+    //        Console.WriteLine("==========================================");
+    //        Console.WriteLine("Delivery Center");
+    //        Console.WriteLine("==========================================");
+    //        if (CenterDriver != null)
+    //            Console.WriteLine($"Driver : {CenterDriver.Name}");
+    //        Console.WriteLine("\n------------------------------------------\n");
+
+    //        foreach (Shipment s in Shipments)
+    //        {
+    //            if (s != null)
+    //            {
+    //                s.PrintShipment(); 
+    //            }
+    //        }
+    //    }
+    //}
+    #endregion
     internal class Program
     {
         static void Main(string[] args)
